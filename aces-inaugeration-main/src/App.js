@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import './App.css';
 import lockgif from "./lock2.gif"
 import newgif from "./unlock2.gif" // Import the new GIF
+import LandingPage from './landing_page';
 
 const App = () => {
   const [clicks, setClicks] = useState(0);
@@ -67,10 +69,7 @@ const App = () => {
       )}
 
       {showLandingPage && (
-        <div className="landing-page">
-          <h1>Welcome to the amazing super duper crazy a$$ ACES Inaugeration</h1>
-          <p>CHEEEM TAPAK DUM DUM</p>
-        </div>
+        <LandingPage /> // Redirect to LandingPage component
       )}
     </div>
   );
