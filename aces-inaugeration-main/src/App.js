@@ -63,7 +63,7 @@ const App = () => {
             onEnded={handleVideoEnd}
             autoPlay
           >
-            <source src="your-video.mp4" type="video/mp4" />
+            <source src="ACES_bg_reel_quality.mp4" type="video/mp4" />
           </video>
         </div>
       )}
